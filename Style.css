@@ -1,0 +1,102 @@
+/*.container{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgb(164, 215, 249),rgb(71, 162, 223)),url(Img1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}*/
+body{
+    background-image: url("Img1.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+.FormBox{
+width: 90%;
+max-width: 400px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+background-color: rgb(178, 249, 152);
+padding: 40px 50px 60px;
+text-align: center;
+ border-radius: 1rem;
+}
+
+.FormBox h1{
+    font-size: 35px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.FormBox h1::after{
+    content: '';
+    width: 90px;
+    height: 5px;
+    border-radius: 60px;
+    background: rgb(130, 130, 215);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-group{
+    background-color: white;
+    margin: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    background: transparent;
+    width: 100%;
+    border: 10px;
+    outline: 0;
+    padding: 15px 10px 15px;
+}
+
+.input-group i{
+    margin-left: 10px;
+}
+
+
+form p{
+    font-size: 15px;
+}
+form p a{
+    text-decoration: none;
+    color: rgb(59, 59, 205);
+}
+.button-group{
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;/*Space between the two button*/
+    height: 10px;
+}
+.button-group button{
+    flex-basis: 40%;
+    background-color:rgb(130, 130, 215);
+    color: white;
+    height: 25px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.FormSection{
+    height: 220px;
+}
+
+.button-group button.disable{
+    background-color: white;
+    color: #555;
+}

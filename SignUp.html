@@ -28,13 +28,15 @@
                     </div>
                     <div class="input-group">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" id="password">
+                        <img src="eye-close.png" id="eye">
+                        <p id="message" hidden>Password Strenght is <span id="str"></span></p>
                     </div>
-                    <p>Forgot Password? <a href="#">Click Here</a></p>
+                    <p id="forgot" hidden>Forgot Password? <a href="#">Click Here</a></p>
                 </div>
                 <div class="button-group">
-                    <button type="button" id="SignUp">Sign Up<input>
-                    <button type="button" id="SignIn"class="disable">Sign In<input>
+                    <button type="button" id="SignUp">Sign Up
+                        <button type="button" id="SignIn" class="disable">Sign In
                 </div>
             </form>
         </div>
@@ -42,4 +44,5 @@
 
 </body>
 <script src="SignUpScript.js"></script>
+
 </html>

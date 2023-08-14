@@ -6,32 +6,33 @@
     background-size: cover;
     
 }*/
-body{
+body {
     background-image: url("Img1.jpg");
     width: 100%;
     height: auto;
     background-size: cover;
-  }
-
-.FormBox{
-width: 90%;
-max-width: 400px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-background-color: rgb(178, 249, 152);
-padding: 40px 50px 60px;
-text-align: center;
- border-radius: 1rem;
 }
 
-.FormBox h1{
+.FormBox {
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(178, 249, 152);
+    padding: 40px 50px 60px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.FormBox h1 {
     font-size: 35px;
     margin-bottom: 50px;
     position: relative;
 }
-.FormBox h1::after{
+
+.FormBox h1::after {
     content: '';
     width: 90px;
     height: 5px;
@@ -43,7 +44,7 @@ text-align: center;
     transform: translate(-50%);
 }
 
-.input-group{
+.input-group {
     background-color: white;
     margin: 15px 10px;
     border-radius: 10px;
@@ -53,36 +54,48 @@ text-align: center;
     transition: max-height 0.5s;
     overflow: hidden;
 }
-input{
+
+input {
     background: transparent;
     width: 100%;
     border: 10px;
     outline: 0;
     padding: 15px 10px 15px;
+
 }
 
-.input-group i{
+.input-group i {
     margin-left: 10px;
 }
 
+.input-group img {
+    cursor: pointer;
+    width: 20px;
+    margin-right: 15px;
+}
 
-form p{
+
+form p {
     font-size: 15px;
 }
-form p a{
+
+form p a {
     text-decoration: none;
     color: rgb(59, 59, 205);
 }
-.button-group{
+
+.button-group {
     margin-left: 20%;
     width: 60%;
     display: flex;
-    justify-content: space-between;/*Space between the two button*/
+    justify-content: space-between;
+    /*Space between the two button*/
     height: 10px;
 }
-.button-group button{
+
+.button-group button {
     flex-basis: 40%;
-    background-color:rgb(130, 130, 215);
+    background-color: rgb(130, 130, 215);
     color: white;
     height: 25px;
     font-size: 18px;
@@ -92,11 +105,18 @@ form p a{
     cursor: pointer;
     transition: background 1s;
 }
-.FormSection{
+
+.FormSection {
     height: 220px;
 }
 
-.button-group button.disable{
+.button-group button.disable {
     background-color: white;
     color: #555;
+}
+
+#message {
+    position: absolute;
+    bottom: 84px;
+    font-weight: 1000;
 }
